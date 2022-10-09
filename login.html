@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: rgb(70, 136, 211);
+        background: linear-gradient(
+          135deg,
+          rgba(70, 136, 211, 1) 35%,
+          rgba(124, 84, 182, 1) 100%
+        );
+        font-family: "Roboto", sans-serif;
+      }
+
+      form {
+        margin: auto;
+        width: 20%;
+        padding: 20px 30px;
+        background-color: white;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        border-radius: 20px;
+      }
+      input {
+        padding: 10px 15px;
+        margin-top: 30px;
+        box-sizing: border-box;
+        width: 100%;
+        border: none;
+        border-bottom: 3px solid rgb(192, 191, 190);
+        font-size: 18px;
+      }
+      ::placeholder {
+        color: rgb(192, 193, 196);
+      }
+      h2 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 30px;
+      }
+      #forget {
+        text-align: center;
+        margin-top: 60px;
+        color: rgb(170, 162, 162);
+        font-weight: 400;
+      }
+      #signup {
+        text-align: center;
+        margin-top: 10px;
+        color: rgb(170, 162, 162);
+        font-weight: 400;
+        margin-bottom: 60px;
+      }
+      input[type="submit"] {
+        color: white;
+        padding: 20px 10px;
+        border: none;
+        background: rgb(55, 149, 218);
+        background: linear-gradient(
+          135deg,
+          rgba(55, 149, 218, 1) 35%,
+          rgba(140, 69, 173, 1) 100%
+        );
+      }
+
+      a {
+        text-decoration: none;
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="divform">
+      <form>
+        <h2>Login</h2>
+
+        <input type="email" id="email" required placeholder="Email" />
+        <input type="password" id="password" required placeholder="Password" />
+        <input type="submit" value="Login" />
+
+        <p id="forget">Forgot <a href="">Password</a></p>
+        <p id="signup">Don't have an account? <a href="">Sign up</a></p>
+      </form>
+    </div>
+  </body>
+</html>
